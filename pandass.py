@@ -15,8 +15,20 @@ print(table)
 #print(table.values)
 #print(table.index)
 #print(table.columns)
-print(table.sort_values(['age','experience'],ascending=[True,False])) 
-print(table[['age','experience']])
+#print(table.sort_values(['age','experience'],ascending=[True,False])) 
+#print(table[['age','experience']])
+
+print(table['age'].mean())   #center of my data
+print(table['age'].median()) #median of data
+#print(table['age'].max())
+#print(table['age'].min())  
+#print(table['age'].sum())  
+print(table['age'].mode()) #idk what it does
+print(table['age'].var())   #suppose to be variation
+print(table['age'].std())   #suppose to be standart variation
+print(table['age'].quantile(0.3))    
+table['age'].agg([function]) #makes a column throght the function
+
 
 
 
